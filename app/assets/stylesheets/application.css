@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+/**************************/
+/*画面共通設定*/
+/**************************/
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+p ,a {
+    font-family:  verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+/**************************/
+/*トップ画面*/
+/**************************/
