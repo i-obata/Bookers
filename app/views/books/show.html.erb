@@ -1,6 +1,6 @@
 <html>
     <body>
-        <div><%= flash[:notice] %></div>
+        <div class="successfully-massage"><%= flash[:notice] %></div>
         <p><strong>Title:</strong><%= @book.title %></p>
         <p><strong>Body:</strong><%= @book.body %></p>
         <p><%= link_to "Edit","/books/#{@book.id}/edit" %>｜<%= link_to "Back","/books" %></p>

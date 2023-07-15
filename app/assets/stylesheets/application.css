@@ -17,26 +17,74 @@
 /**************************/
 /*画面共通設定*/
 /**************************/
-body {
-    background-color: #fff;
-    color: #333;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,p {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
+    line-height: 20px;
+    margin: 30px;
 }
 
-p ,td {
-    font-family:  verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
+.error-box{
+    width: 500px;
+    margin-top: 10px;
+    border: solid 1px red;
+}
+.error-title{
+    background-color: red;
+    color: white;
+    padding: 5px 0 5px 0;
+}
+.error-message{
+    margin-left: 25px;
+    padding: 30px 0 30px 0;
 }
 
-/**************************/
-/*トップ画面*/
-/**************************/
+.successfully-massage{
+    color: green;
+}
 
 /**************************/
 /*一覧画面*/
 /**************************/
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.new-book-label{
+    padding-top: 10px;
+}
+
+/**************************/
+/*編集画面*/
+/**************************/
+.edit-book-label{
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+/********************************/
+/*540px以下*/
+/********************************/
+@media screen and (max-width: 540px){
+    body,p {
+        width: 100%;
+        display: inline-block;
+        font-size: 0.1vw;
+        line-height: 1vh;
+        margin: 10px;
+    }
+    .error-box{
+        width: 85%;
+    }
+}
